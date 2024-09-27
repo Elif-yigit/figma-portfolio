@@ -1,0 +1,327 @@
+@import url(reset.css);
+
+.container {
+  margin:0 auto;
+  padding:16px;
+  box-sizing: border-box;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-bottom:32px;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+  padding: 15px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;  
+  z-index: 2; 
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px; 
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  z-index: 1; 
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.sidebar a.active {
+  font-weight: bold;
+}
+
+
+.menu-checkbox:checked ~ .sidebar {
+  right: 0;
+}
+
+
+.menu-checkbox:checked ~ body {
+  overflow: hidden;
+}
+
+
+
+a {
+  text-decoration:none;
+  color:inherit;
+}
+
+
+
+.info img {
+  
+  margin-bottom:24px;
+   width:100%;
+}
+
+.info h1 {
+    
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 40px;
+    text-align: left;
+    color: #00001A;
+    margin-bottom: 16px;
+}
+.info p
+{
+  
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #5E607A;
+    margin-bottom: 24px;
+}
+
+.info a {
+  
+    background: #F15D51;
+    padding: 13px 35px 11px 31px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 4.375px;
+    text-align: left;
+    color: #FFFDFA;
+    margin-bottom:64px;
+}
+
+.new {
+  
+      background: #00001A;
+      padding: 24px 20px 24px 21px;
+      text-align:left;
+      margin-top: 64px;
+      margin-bottom: 64px;
+}
+
+.new h2 {
+  
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #E9AA52;
+    margin-bottom: 18px;
+    
+}
+
+.new h3 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    color: #FFFDFA;
+     margin-bottom:8px;
+     padding-top: 31px;
+}
+
+.new p {
+  
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #C5C6CE;
+    border-bottom:1px solid  #5E607A;
+    padding-bottom: 29px;
+
+}
+
+.pc-upgrade {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+
+
+
+
+
+
+.pc-upgrade-text h3 {
+  
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #C5C6CE;
+      margin-bottom: 12px;
+}
+
+
+.pc-upgrade-text h2
+ {
+  
+  font-family: Inter;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: left;
+    color: #00001A;
+   margin-bottom:9px;
+}
+
+.pc-upgrade-text p
+
+{
+  font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #5E607A
+}
+
+.menu {
+  
+  display:none;
+}
+
+@media only screen and (min-width: 1280px) {
+  
+
+
+  
+  
+  .container {
+  margin:0 auto;
+  padding: 89px 165px;
+  box-sizing: border-box;
+}
+
+  
+  
+  
+  .hamburger-menu {
+    display:none;
+  }
+  
+  .menu  {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+  }
+  .menu li:hover:active {
+    color: #F15D51; 
+}
+  
+  .menu li {
+    
+       color:#5E607A;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: left;
+  }
+  
+  .desktop-grid
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    margin-bottom:71px;
+  }
+  
+   .desktop-grid img {
+            width: 100%; 
+            height: auto; 
+           
+        }
+  .grid-desktop-new
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: start;
+}
+  .grid-desktop-new a:hover {
+    background-color:black;
+  }
+  
+  .info {
+    margin-top:61px;
+  }
+  .info h1
+  {
+    
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 56px;
+    text-align: left;
+  }
+  
+  .info p {
+   
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+  }
+  
+  .new {
+    
+      background: #00001A;
+      padding: 24px 20px 24px 21px;
+      text-align:left;
+     
+      margin-bottom:61px;
+  }
+  
+  .new-text h3:hover {
+    
+    color: #E9AA52;
+
+  }
+  
+  .best-pc-upgrade
+  {
+    display: flex;
+    gap: 30px;
+  }
+  .pc-upgrade-image
+  {
+        display: grid;
+    align-items: stretch;
+  }
+  .dropdown-menu {
+    display:none;
+  }
+  
+ .pc-upgrade-text h2:hover
+  {
+    color: #F15D51;
+
+  }
+
+}
